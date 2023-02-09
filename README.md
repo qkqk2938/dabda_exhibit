@@ -68,3 +68,75 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+// @flow
+import React from 'react';
+import { Loading } from 'src/components/loading';
+import { ViewGrid, CenteredGrid } from 'src/components/layout';
+import { Stretch } from './style';
+
+export const LoadingView = () => {
+  return (
+    <React.Fragment>
+      <ViewGrid>
+        <CenteredGrid>
+          <Stretch>
+            <Loading />
+          </Stretch>
+        </CenteredGrid>
+      </ViewGrid>
+    </React.Fragment>
+  );
+};
+
+
+
+export const Loading = ({
+  size,
+  color,
+  ...rest
+}: {
+  size?: number,
+  color?: string,
+}): React$Element<any> => (
+  <LoadingContainer {...rest}>
+    <Spinner size={size} color={color} />
+  </LoadingContainer>
+);
+
+export const Spinner = styled.span`
+  width: ${props => (props.size ? `${props.size}px` : '32px')};
+  height: ${props => (props.size ? `${props.size}px` : '32px')};
+  &:before {
+    content: '';
+    box-sizing: border-box;
+    display: inline-block;
+    position: ${props => (props.inline ? 'relative' : 'absolute')};
+    top: ${props => (props.inline ? '0' : '50%')};
+    left: ${props => (props.inline ? '0' : '50%')};
+    width: ${props => (props.size !== undefined ? `${props.size}px` : '16px')};
+    height: ${props => (props.size !== undefined ? `${props.size}px` : '16px')};
+    margin-top: ${props =>
+      props.size !== undefined ? `-${props.size / 2}px` : '-8px'};
+    margin-left: ${props =>
+      props.size !== undefined ? `-${props.size / 2}px` : '-8px'};
+    border-radius: 50%;
+    border: 2px solid
+      ${props =>
+        props.color
+          ? eval(`props.theme.${props.color}`)
+          : props.theme.brand.alt};
+    border-top-color: transparent;
+    border-right-color: ${props =>
+      props.color ? eval(`props.theme.${props.color}`) : props.theme.brand.alt};
+    border-bottom-color: transparent;
+    animation: ${spin} 2s linear infinite;
+  }
+`;
+
+
+### 참고
+
+https://github.com/withspectrum/spectrum/blob/alpha/src/components/loading/index.js
+https://blog.woolta.com/categories/1/posts/211
