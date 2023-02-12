@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+#mainlogodiv {
+  width: 80%;
+  height: 100vh;
+  text-align: center;
+  margin-left: 10%;
+}
+#mainlogo {
+  max-height: 75vh;
+  max-width: 80vh;
+  width: 100%;
+  margin-top: 12%;
+}
+
