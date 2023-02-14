@@ -1,7 +1,8 @@
 import { Route, Routes,  Outlet } from 'react-router-dom';
-import Ac from './view/Ac';
+import Main from './view/dabda/Main';
+import Push from './view/dabda/Push';
 import Home from './view/Home';
-import Header from './component/Header';
+import Redirect from './Redirect';
 
 import './css/App.css';
 
@@ -14,9 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="dabda" element={<User />} >
-          <Route path="main" element={<Ac />} />
+          <Route path="main" element={<Main />} />
+          <Route path="push" element={<Push />} />
         </Route>
-
+        <Route path="/redirect" element={<Redirect />} />
       </Routes>
     </div>
   );
@@ -25,7 +27,6 @@ function App() {
 function User() {
   return (
     <>
-      <Header />
       <Outlet />
     </>
   )

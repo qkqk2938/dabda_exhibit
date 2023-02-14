@@ -1,0 +1,51 @@
+#contaner {
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    padding-top: 20%;
+}
+#menuItems {
+    width: 300px;
+    margin: auto;
+}
+
+.menuItem{
+    font-size: 30px;
+    margin-top: 30px;
+    color: gray;
+}
+
+.menuItem:hover{
+    color:black;
+}
+
+#MBcontaner {
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    padding-top: 50%;
+}
+#MBmenuItems {
+    width: 300px;
+    margin: auto;
+}
+
+.MBmenuItem{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.MBmenuItem:hover{
+    color:black;
+}
+
+#MBinsta {
+    letter-spacing:1px;
+}
+#MBqa {
+    letter-spacing:0.5px;
+}
+#insta {
+    letter-spacing:3px;
+}
