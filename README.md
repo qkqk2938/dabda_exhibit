@@ -140,3 +140,7 @@ export const Spinner = styled.span`
 
 https://github.com/withspectrum/spectrum/blob/alpha/src/components/loading/index.js
 https://blog.woolta.com/categories/1/posts/211
+
+### ssl
+Certificate is saved at: /etc/letsencrypt/live/dabda.co.kr/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/dabda.co.kr/privkey.pem

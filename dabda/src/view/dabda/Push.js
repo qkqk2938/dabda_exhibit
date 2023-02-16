@@ -4,11 +4,7 @@ import {BrowserView, MobileView} from "react-device-detect";
 import { useNavigate } from "react-router-dom";
 
 const Ac = () => {
-  // const moveOutPage = window.location.href();
 
-  // function goInsta(){
-  //   moveOutPage('https://www.instagram.com/dabda/');
-  // }
     const movePage = useNavigate();
 
     function goInsta(){
@@ -23,9 +19,9 @@ const Ac = () => {
       <MobileView>
         <div id = "MBcontaner">
           <div id ="MBmenuItems">
-            <div onClick = {goQnA} className = "MBmenuItem" id ="MBqa">Q &nbsp; .&nbsp; and &nbsp; .&nbsp; A</div>
+            <div onClick = {goQnA} className = "MBmenuItem" id ="qa">Q &nbsp; .&nbsp; and &nbsp; .&nbsp; A</div>
             <div className = "MBmenuItem">N &nbsp;O &nbsp;T &nbsp;I &nbsp;C &nbsp;E</div>
-            <div onClick = {goInsta} className = "MBmenuItem" id = "MBinsta">INSTAGRAM</div>
+            <div onClick = {goInsta} className = "MBmenuItem" id = "insta">INSTAGRAM</div>
           </div>
         </div>
       </MobileView>

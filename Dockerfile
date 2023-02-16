@@ -9,7 +9,8 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | b
 RUN export NVM_DIR="$HOME/.nvm"
 RUN [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 RUN [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-RUN nvm install 18
+RUN nvm install 12
+RUN npm install react-scripts
 
 COPY dockerSet.sh /
 COPY dabda /

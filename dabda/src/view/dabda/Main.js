@@ -9,12 +9,17 @@ const Ac = () => {
     function goPush(){
       movePage('/dabda/push');
     }
+
+    function goSStore(){
+      movePage('/redirect', { state: { url: "https://smartstore.naver.com/dabda25" } });
+    }
+
     return (
       <>
       <MobileView>
         <div id = "MBcontaner">
           <div id ="MBmenuItems">
-            <div className = "MBmenuItem">S &nbsp;&nbsp; H &nbsp;&nbsp; O &nbsp;&nbsp; P</div>
+            <div onClick = {goSStore} className = "MBmenuItem">S &nbsp;&nbsp; H &nbsp;&nbsp; O &nbsp;&nbsp; P</div>
             <div className = "MBmenuItem">B &nbsp;&nbsp; O &nbsp;&nbsp; O &nbsp;&nbsp; K</div>
             <div onClick = {goPush} className = "MBmenuItem">P &nbsp;&nbsp; U &nbsp;&nbsp; S &nbsp;&nbsp; H</div>
           </div>
@@ -23,7 +28,7 @@ const Ac = () => {
       <BrowserView>
       <div id = "contaner">
         <div id ="menuItems">
-          <div className = "menuItem">S &nbsp;&nbsp; H &nbsp;&nbsp; O &nbsp;&nbsp; P</div>
+          <div onClick = {goSStore} className = "menuItem">S &nbsp;&nbsp; H &nbsp;&nbsp; O &nbsp;&nbsp; P</div>
           <div className = "menuItem">B &nbsp;&nbsp; O &nbsp;&nbsp; O &nbsp;&nbsp; K</div>
           <div onClick = {goPush} className = "menuItem">P &nbsp;&nbsp; U &nbsp;&nbsp; S &nbsp;&nbsp; H</div>
         </div>
