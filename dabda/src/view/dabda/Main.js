@@ -3,7 +3,7 @@ import '../../css/dabda/main.css';
 import { useNavigate } from "react-router-dom";
 import {BrowserView, MobileView} from "react-device-detect";
 
-const Ac = () => {
+const Main = () => {
     const movePage = useNavigate();
 
     function goPush(){
@@ -38,4 +38,4 @@ const Ac = () => {
     );
   };
   
-  export default Ac;
+  export default Main;

@@ -144,3 +144,6 @@ https://blog.woolta.com/categories/1/posts/211
 ### ssl
 Certificate is saved at: /etc/letsencrypt/live/dabda.co.kr/fullchain.pem
 Key is saved at:         /etc/letsencrypt/live/dabda.co.kr/privkey.pem
+
+### start script
+  // HTTPS=true SSL_CRT_FILE=/etc/letsencrypt/live/dabda.co.kr/fullchain.pem SSL_KEY_FILE=/etc/letsencrypt/live/dabda.co.kr/privkey.pem

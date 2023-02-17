@@ -3,7 +3,7 @@ import '../../css/dabda/main.css';
 import {BrowserView, MobileView} from "react-device-detect";
 import { useNavigate } from "react-router-dom";
 
-const Ac = () => {
+const Push = () => {
 
     const movePage = useNavigate();
 
@@ -14,13 +14,17 @@ const Ac = () => {
       movePage('/redirect', { state: { url: "http://pf.kakao.com/_wkxiNxj" } });
     }
 
+    function goNoti(){
+      movePage('/dabda/notice');
+    }
+
     return (
       <>
       <MobileView>
         <div id = "MBcontaner">
           <div id ="MBmenuItems">
             <div onClick = {goQnA} className = "MBmenuItem" id ="qa">Q &nbsp; .&nbsp; and &nbsp; .&nbsp; A</div>
-            <div className = "MBmenuItem">N &nbsp;O &nbsp;T &nbsp;I &nbsp;C &nbsp;E</div>
+            <div onClick = {goNoti} className = "MBmenuItem">N &nbsp;O &nbsp;T &nbsp;I &nbsp;C &nbsp;E</div>
             <div onClick = {goInsta} className = "MBmenuItem" id = "insta">INSTAGRAM</div>
           </div>
         </div>
@@ -29,7 +33,7 @@ const Ac = () => {
       <div id = "contaner">
         <div id ="menuItems">
           <div onClick = {goQnA} className = "menuItem" id ="qa">Q &nbsp; .&nbsp; and &nbsp; .&nbsp; A</div>
-          <div className = "menuItem">N &nbsp;O &nbsp;T &nbsp;I &nbsp;C &nbsp;E</div>
+          <div onClick = {goNoti} className = "menuItem">N &nbsp;O &nbsp;T &nbsp;I &nbsp;C &nbsp;E</div>
           <div onClick = {goInsta} className = "menuItem" id = "insta">INSTAGRAM</div>
         </div>
       </div>
@@ -38,4 +42,4 @@ const Ac = () => {
     );
   };
   
-  export default Ac;
+  export default Push;
