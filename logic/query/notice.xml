@@ -6,9 +6,10 @@
             id
             ,title
             ,requester
-            ,date_format(reqdate, '%Y-%m-%d %T')
+            ,if(curdate() = date_format(reqdate, '%Y-%m-%d'),date_format(reqdate, '%H:%i'),date_format(reqdate, '%Y.%m.%d'))  as reqdate
             ,hit 
         FROM notice
+        order by reqdate asc
     </select>
 
     <select id="getNoticeDetail">
