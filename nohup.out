@@ -1,0 +1,11 @@
+URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/bin/sh'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/layer.js:123:27)
+    at matchLayer (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/index.js:585:18)
+    at next (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/index.js:226:15)
+    at serveStatic (/home/qkqk2938/dabda/dabda/node_modules/serve-static/index.js:75:16)
+    at Layer.handle [as handle_request] (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/index.js:328:13)
+    at /home/qkqk2938/dabda/dabda/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/index.js:346:12)

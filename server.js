@@ -4,7 +4,8 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-
+require('dotenv').config();
+var noticeApi  = require('./api/noticeApi');
 const options = {
 
   ca: fs.readFileSync('/etc/letsencrypt/live/dabda.co.kr/fullchain.pem'),
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'dabda/build')));
 //   console.log('listening on 3000')
 // }); 
 
+app.use('/api/notice',noticeApi);
 
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, '/dabda/build/index.html'));
