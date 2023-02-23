@@ -82,11 +82,47 @@ const Notice = () => {
       <MobileView>
         <div id = "MBnoticeItems">
           <div id = "MBnoticeItem">
-            <input id = "inputTitle" />
-            <input id = "inputReqr" />
-            <p id = "inputDesc">
+            
+          <table>
+              <tr id = "trID">
+                <th className='NI1col'>
+                  I &nbsp;&nbsp;&nbsp; D : 
+                </th>
+                <td className='NI2col'>
+                  <input id = "inputID" readOnly/>
+                </td>
+              </tr>
+              <tr>
+                <th className='NI1col'>
+                  제 &nbsp;&nbsp; 목 : 
+                </th>
+                <td className='NI2col'>
+                  <input id = "inputTitle" />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                작성자 : 
+                </th>
+                <td>
+                <input id = "inputReqr" value="답다맨"/>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                내 &nbsp;&nbsp; 용 : 
+                </th>
+                <td>
+                <textarea id = "inputDesc">
+              </textarea>
+                </td>
+              </tr>
+            </table>
+            <input className='NIfootBtn' type="button" value="취소" onClick={goNotice}/>
+            <input className='NIfootBtn' type="button" value="확인" onClick={insertNotice}/>
 
-            </p>
+
+            
           </div>
         </div>
       </MobileView>

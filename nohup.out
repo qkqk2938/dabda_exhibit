@@ -9,3 +9,517 @@ URIError: Failed to decode param '/cgi-bin/.%%%%32%%65/.%%%%32%%65/.%%%%32%%65/.
     at trim_prefix (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/index.js:328:13)
     at /home/qkqk2938/dabda/dabda/node_modules/express/lib/router/index.js:286:9
     at Function.process_params (/home/qkqk2938/dabda/dabda/node_modules/express/lib/router/index.js:346:12)
+{
+  host: 'localhost',
+  port: 3306,
+  user: 'dabda',
+  password: '4514',
+  database: 'dabda',
+  connectionLimit: 5
+}
+Time:  1677138674759
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677138716044
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677138736971
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677138749427
+UPDATE
+  notice
+SET
+  hit = hit + 1
+WHERE
+  id = '2'
+Time:  1677138749435
+SELECT
+  id,
+  title,
+  description,
+  requester,
+  date_format(reqdate, '%Y-%m-%d %T') as reqdate,
+  hit
+FROM
+  notice
+where
+  id = '2'
+Time:  1677138751418
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677138805212
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677138808323
+SELECT
+  id,
+  title,
+  description,
+  requester,
+  date_format(reqdate, '%Y-%m-%d %T') as reqdate,
+  hit
+FROM
+  notice
+where
+  id = '1'
+Time:  1677138812887
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677138818785
+SELECT
+  id,
+  title,
+  description,
+  requester,
+  date_format(reqdate, '%Y-%m-%d %T') as reqdate,
+  hit
+FROM
+  notice
+where
+  id = '2'
+Time:  1677138821148
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139184357
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139201177
+delete from
+  notice
+where
+  id = '2'
+Time:  1677139201192
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139293453
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Error: ENOENT: no such file or directory, stat '/home/qkqk2938/dabda/dabda/dabda/build/index.html'
+Time:  1677139302921
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139454812
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139455297
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139556592
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139556824
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139609024
+insert into
+  notice (id, title, description, requester)
+values
+  (if('' = "", null, ''), '헨드폰도 된당', '되용', '답다맨') ON DUPLICATE key
+update
+  title = '헨드폰도 된당',
+  description = '되용',
+  requester = '답다맨'
+Time:  1677139609055
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139611542
+UPDATE
+  notice
+SET
+  hit = hit + 1
+WHERE
+  id = '10'
+Time:  1677139611576
+SELECT
+  id,
+  title,
+  description,
+  requester,
+  date_format(reqdate, '%Y-%m-%d %T') as reqdate,
+  hit
+FROM
+  notice
+where
+  id = '10'
+Time:  1677139613113
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139634117
+SELECT
+  id,
+  title,
+  description,
+  requester,
+  date_format(reqdate, '%Y-%m-%d %T') as reqdate,
+  hit
+FROM
+  notice
+where
+  id = '10'
+Time:  1677139643859
+insert into
+  notice (id, title, description, requester)
+values
+  (if('10' = "", null, '10'), '헨드폰도 된당!!', '되용!!', '답다맨') ON DUPLICATE key
+update
+  title = '헨드폰도 된당!!',
+  description = '되용!!',
+  requester = '답다맨'
+Time:  1677139644047
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139645391
+UPDATE
+  notice
+SET
+  hit = hit + 1
+WHERE
+  id = '10'
+Time:  1677139645489
+SELECT
+  id,
+  title,
+  description,
+  requester,
+  date_format(reqdate, '%Y-%m-%d %T') as reqdate,
+  hit
+FROM
+  notice
+where
+  id = '10'
+Time:  1677139647715
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139660893
+delete from
+  notice
+where
+  id = '10'
+Time:  1677139660915
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139683948
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139686517
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139710319
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc
+Time:  1677139711249
+SELECT
+  id,
+  title,
+  requester,
+  if(
+    curdate() = date_format(reqdate, '%Y-%m-%d'),
+    date_format(reqdate, '%H:%i'),
+    date_format(reqdate, '%Y.%m.%d')
+  ) as reqdate,
+  hit,
+  reqdate as oreqdate
+FROM
+  notice
+order by
+  oreqdate desc

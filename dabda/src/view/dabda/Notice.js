@@ -35,6 +35,11 @@ const Notice = () => {
   }
 
   const deleteNotice = async (id) => {
+    
+    if(!window.confirm(id+"번 공지를 삭제하시겠습니다?")){
+      return;
+    }
+
     const result = await axios.post('/api/notice/deleteNotice', {
       id : id
     },{
@@ -112,7 +117,7 @@ const Notice = () => {
       <MobileView>
         <div id = "MBnoticeItems">
           <div id = "MBnoticeItem">
-            <h2>NOTICE</h2>
+           <h2 onDoubleClick={showHidden}>NOTICE</h2>
               <table id = 'notiTable'>
                   <tr>
                     <th id = "culId">No.</th>
@@ -124,9 +129,12 @@ const Notice = () => {
                       <td className='tdId'>{row.id}. </td>
                       <td className='tdTitle'>{row.title}</td>
                       <td className='tdReq'>{row.requester}</td>
+                      <td className='tdBtn'><input type="button" className="updateBtn" value="수정" onClick={(e) => {e.stopPropagation();goHidden(row.id)}} /></td>
+                      <td className='tdBtn'><input type="button" className="updateBtn" value="삭제" onClick={(e) => {e.stopPropagation();deleteNotice(row.id)}} /></td>
                     </tr>        
                 ))}
             </table>
+            <input className='tdBtn' id = "hiddenInsertBtn" type="button" value="글쓰기" onClick={goHidden}/>
           </div>
         </div>
       </MobileView>
