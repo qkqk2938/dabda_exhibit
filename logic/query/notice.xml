@@ -8,8 +8,9 @@
             ,requester
             ,if(curdate() = date_format(reqdate, '%Y-%m-%d'),date_format(reqdate, '%H:%i'),date_format(reqdate, '%Y.%m.%d'))  as reqdate
             ,hit 
+            ,reqdate as oreqdate
         FROM notice
-        order by reqdate asc
+        order by oreqdate desc
     </select>
 
     <select id="getNoticeDetail">
@@ -18,7 +19,7 @@
             ,title
             ,description
             ,requester
-            ,reqdate
+            ,date_format(reqdate, '%Y-%m-%d %T') as reqdate
             ,hit 
         FROM notice
         where id = #{id} 
@@ -29,4 +30,25 @@
         SET hit = hit + 1 
         WHERE id = #{id}
     </update>  
+
+    <insert id="insertNotice">
+        insert into notice (
+            id
+            ,title
+            ,description
+            ,requester
+        ) 
+        values (
+            if(#{id}="",null,#{id})
+            ,#{title}
+            ,#{description}
+            ,#{requester}
+        )
+        ON DUPLICATE key update title = #{title}, description = #{description}, requester = #{requester}
+        
+    </insert>
+    <delete id="deleteNotice">
+        delete from notice where id = #{id}
+    </delete>
+    
 </mapper>

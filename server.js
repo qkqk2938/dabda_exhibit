@@ -3,6 +3,7 @@ const http = require('http');
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const bodyParser = require('body-parser');
 const app = express();
 require('dotenv').config();
 var noticeApi  = require('./api/noticeApi');
@@ -17,6 +18,7 @@ const options = {
 };
 
 
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'dabda/build')));
 
 // app.listen(3000, function () {
