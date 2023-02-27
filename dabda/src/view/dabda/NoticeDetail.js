@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import '../../css/dabda/noticedetail.css';
+import '../../css/dabda/noticedetail.scss';
 import {BrowserView, MobileView} from "react-device-detect";
 import axios from 'axios';
-import { useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import menuIcon from '../../image/dabda/menuIcon.png'
 
 
 const NoticeDetail = () => {
   const [notice, setState] = useState([]);
-
+  const movePage = useNavigate();
   const location = useLocation();
   const { id } = location.state;
 
@@ -18,6 +19,10 @@ const NoticeDetail = () => {
     setState(result.data.data[0]);
   }
 
+  function goNoti(){
+    movePage('/dabda/notice');
+  }
+  
   useEffect(() => {
     getNoticeDetail();
 
@@ -50,6 +55,10 @@ const NoticeDetail = () => {
                 {notice.description}
               </p>
             </div>
+            <div class="button-container-3">
+              <span class="mas"></span>
+              <button type="button" name="Hover" onClick={goNoti}>목록으로</button>
+            </div>
           </div>
         </div>
       </MobileView>
@@ -76,6 +85,10 @@ const NoticeDetail = () => {
               <p id = "descT">
                 {notice.description}
               </p>
+            </div>
+            <div class="button-container-3">
+              <span class="mas"></span>
+              <button type="button" name="Hover" onClick={goNoti}>목록으로</button>
             </div>
           </div>
         </div>

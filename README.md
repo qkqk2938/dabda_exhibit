@@ -1,3 +1,22 @@
+# docker 사용!
+
+## Linux
+
+### 도커 다운로드
+curl -fsSL https://get.docker.com/ | sudo sh 
+
+## sudo 권한 주기 
+sudo usermod -aG docker $USER 
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -147,3 +166,7 @@ Key is saved at:         /etc/letsencrypt/live/dabda.co.kr/privkey.pem
 
 ### start script
   // HTTPS=true SSL_CRT_FILE=/etc/letsencrypt/live/dabda.co.kr/fullchain.pem SSL_KEY_FILE=/etc/letsencrypt/live/dabda.co.kr/privkey.pem
+
+
+
+

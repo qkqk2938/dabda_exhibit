@@ -46,3 +46,17 @@
 #qa {
     letter-spacing:0.5px;
 }
+
+#backIconDiv{
+    position: fixed;
+
+}
+
+
+#backIcon{
+    width: 30px;
+
+    margin-right: 20px;
+
+}
+

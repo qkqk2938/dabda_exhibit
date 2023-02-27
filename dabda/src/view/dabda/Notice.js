@@ -5,9 +5,11 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import $ from 'jquery';
 import closeIcon from '../../image/dabda/closeIcon.png'
+import backIcon from '../../image/dabda/backIcon.png'
 
 const Notice = () => {
   const [notice, setState] = useState([]);
+  const [auth, setAuth] = useState(false);
   const movePage = useNavigate();
 
 
@@ -19,6 +21,10 @@ const Notice = () => {
   function goHidden(id){
     movePage('/dabda/noticeinsert',{ state: { id: id } });
   }
+  function goPush(){
+    movePage('/dabda/push');
+  }
+  
   const increaseHit = async (id) => {
     const result = await axios.post('/api/notice/increaseHit', {
       id : id
@@ -94,6 +100,7 @@ const Notice = () => {
 
      return (
       <>
+      <div id = "backIconDiv"><img id = "backIcon" src={backIcon} alt="backIcon" onClick={goPush} /></div>
       <div id = "entWrite" onDoubleClick={showHiddenPass}></div>
 
       <div id = "hiddenPass" >
@@ -157,6 +164,7 @@ const Notice = () => {
                       <td className='tdReq'>{row.requester}</td>
                       <td className='tdReqd'>{row.reqdate}</td>
                       <td className='tdHit'>{row.hit}</td>
+                      
                       <td className='tdBtn'><input type="button" className="updateBtn" value="수정" onClick={(e) => {e.stopPropagation();goHidden(row.id)}} /></td>
                       <td className='tdBtn'><input type="button" className="updateBtn" value="삭제" onClick={(e) => {e.stopPropagation();deleteNotice(row.id)}} /></td>
                     </tr>        
