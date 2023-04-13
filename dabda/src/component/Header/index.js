@@ -1,15 +1,21 @@
 import './style.css';
-import menu from '../../image/header/menu.png'
+import {BrowserView, MobileView} from "react-device-detect";
 
 const header = () => {
     return (
-        <div id = "header">
-            <div id = "headerMain" className = "headerSize"><img id = 'menuicon' src = {menu} /><h1>헤더</h1></div>
+        <>
+        <BrowserView>
+            
+        </BrowserView>
+        <MobileView>
+      
+        </MobileView>
+     
+     
+  
+      </>
 
-            <div id = "headerShield" className = "headerSize"></div>
-
-
-        </div>
+     
    
     );
   };

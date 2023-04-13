@@ -1,62 +1,51 @@
-#contaner {
-    width: 100%;
-    text-align: center;
-    height: 100vh;
-    padding-top: 20%;
+ul{
+
+    list-style:none;
+    padding-left:0px;
 }
-#menuItems {
-    width: 300px;
-    margin: auto;
+.prame{    
+    width : 100%;
+    height : 100%;
+    overflow : hidden;
+    position: fixed;   
+}
+
+.tapHeader{
+    background-color : #EAEAEA;
+    width : 35%;
+    height : 100%;
+    float: left;
+    margin: 0;
+}
+.tapBody {
+    width : 60%;
+    height : 100%;
+    float: left;
+
+}
+
+.mainMenu{
+    height:30%;
 }
 
 .menuItem{
-    font-size: 30px;
-    margin-top: 30px;
-    color: gray;
+    height:17.5%;
+    text-align:right;
+    line-height:150px;
+    padding-right:60px;
+}
+.menuList{
+    border-right:1px solid #BDBDBD;
+    border-bottom:1px solid #BDBDBD;
+    opacity:0.4;
+}
+.selectMenu{
+    background-color : white;
+    opacity:1;
 }
 
-.menuItem:hover{
-    color:black;
+#menuLogo{
+    margin-top:12%;
+    margin-left:10%;
+    height:40%;
 }
-
-#MBcontaner {
-    width: 100%;
-    text-align: center;
-    height: 100vh;
-    padding-top: 50%;
-}
-#MBmenuItems {
-    width: 300px;
-    margin: auto;
-}
-
-.MBmenuItem{
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: gray;
-}
-
-.MBmenuItem:hover{
-    color:black;
-}
-
-#insta {
-    letter-spacing:1px;
-}
-#qa {
-    letter-spacing:0.5px;
-}
-
-#backIconDiv{
-    position: fixed;
-
-}
-
-
-#backIcon{
-    width: 30px;
-
-    margin-right: 20px;
-
-}
-

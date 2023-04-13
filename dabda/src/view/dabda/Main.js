@@ -1,43 +1,67 @@
 import React from 'react';
 import '../../css/dabda/main.css';
-import { useNavigate } from "react-router-dom";
+import logo from '../../image/logo/logo.png'
 import {BrowserView, MobileView} from "react-device-detect";
+import { useState } from "react";
 
 const Main = () => {
-    const movePage = useNavigate();
 
-    function goPush(){
-      movePage('/dabda/push');
+  const data = [
+    {
+      id: 0,
+      title: (
+          <img id = "menuLogo" src = {logo} alt="logo"/>
+  
+      ),
+      description: "1",
+    },
+    {
+      id: 1,
+      title: "답다 프로젝트01_엉성",
+      description: "2",
+    },
+    {
+      id: 2,
+      title: "결핍",
+      description: "3",
+    },
+    {
+      id: 3,
+      title: "은페",
+      description: "4",
+    },
+    {
+      id: 4,
+      title: "사랑",
+      description: "5",
     }
-    function goBook(){
-      movePage('/dabda/book');
-    }
-    function goSStore(){
-      movePage('/redirect', { state: { url: "https://smartstore.naver.com/dabda25" } });
-    }
+  ];
+  const [index, setIndex] = useState(0);
+
 
     return (
       <>
-      <MobileView>
-        <div id = "MBcontaner">
-          <div id ="MBmenuItems">
-            <div onClick = {goSStore} className = "MBmenuItem">S &nbsp;&nbsp; H &nbsp;&nbsp; O &nbsp;&nbsp; P</div>
-            <div onClick = {goBook} className = "MBmenuItem">B &nbsp;&nbsp; O &nbsp;&nbsp; O &nbsp;&nbsp; K</div>
-            <div onClick = {goPush} className = "MBmenuItem">P &nbsp;&nbsp; U &nbsp;&nbsp; S &nbsp;&nbsp; H</div>
-          </div>
-        </div>
-      </MobileView>
-      <BrowserView>
-      <div id = "contaner">
-        <div id ="menuItems">
-          <div onClick = {goSStore} className = "menuItem">S &nbsp;&nbsp; H &nbsp;&nbsp; O &nbsp;&nbsp; P</div>
-          <div onClick = {goBook} className = "menuItem">B &nbsp;&nbsp; O &nbsp;&nbsp; O &nbsp;&nbsp; K</div>
-          <div onClick = {goPush} className = "menuItem">P &nbsp;&nbsp; U &nbsp;&nbsp; S &nbsp;&nbsp; H</div>
-        </div>
-      </div>
-    </BrowserView>
-    </>
+        <BrowserView>
+             <section className = "prame">
+               <ul className = "tapHeader">
+                 {data.map(item => (
+                   <li 
+                   key={item.id}
+                   className= {(item.id===0?"mainMenu menuList":"menuItem menuList")+(item.id===index?" selectMenu":"")}
+                   onClick={() => setIndex(item.id)}>{item.title}</li>
+                 ))}
+               </ul>
+                {data.filter(item => index === item.id).map(item => (
+                 <div className = "tapBody">{item.description}</div>
+               ))}
+             </section>
+        </BrowserView>
+        <MobileView>
+      
+        </MobileView>
+      </>
     );
   };
   
   export default Main;
+
