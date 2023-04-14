@@ -10,8 +10,8 @@
 
 #mainImgBox{
     width: 70%;
-    padding-right: 50px;
-    border-right: 3px solid #B2B1AA;
+    padding-right: 7%;
+    border-right: 2px solid #B2B1AA;
     float: left;
 }
 
@@ -22,15 +22,16 @@
 #mainTitle{
     position:absolute;
     top:0px;
-    right:20px;
-    font-size: 35px;
+    right:7%;
+    font-size: 3vh;
     color: #B2B1AA;
    
 }
 #subTitle{
     position:absolute;
     bottom:0px;
-    right:10px;
+    right:5%;
+    font-size: 2vh;
     color: #B2B1AA;
 }
 
@@ -44,7 +45,7 @@
 
 }
 #logoBox{
-    width: 170px;
+    width: 23%;
     float: left;
 }
 
@@ -52,8 +53,9 @@
     width: 100%;
 }
 #mainDesc{
-    padding-top : 45px;
-    padding-left : 100px;
+    padding-top : 8%;
+    padding-left : 6%;
+    font-size: 1.3vh;
     float: left;
 }
 
@@ -62,16 +64,17 @@
     margin: 0 auto;
 }
 #projectNo{
-    padding-top: 150px;
+    padding-top: 25%;
 }
 
 #projectTitle{
-    font-size: 40px;
+    font-size: 230%;
     padding-top: 15px;
 }
 
 #description{
-    padding-top: 150px;
+    padding-top: 20%;
+    font-size: 2vh;
 
 }
 
@@ -99,6 +102,11 @@
 
 .main3row1img{
     width: 100%;
+}
+
+#m3description{
+    font-size: 1.5vh;
+    color: #B2B1AA;
 }
 
 #main3Row2{
@@ -175,4 +183,10 @@
 
 .main5row1img{
     width: 100%;
+}
+
+#m5description{
+    font-size: 1.5vh;
+    color: #B2B1AA;
+
 }

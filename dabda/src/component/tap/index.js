@@ -79,6 +79,12 @@ const Main3 = () => {
                     <div id = "row_1c" className='main3row1'><img id = "p1_m3_1" className='main3row1img' src = {p1_m3_1} alt="p1_m3_1"/></div>
                     <div id = "row_2c" className='main3row1'><img id = "p1_m3_1_2" className='main3row1img' src = {p1_m3_1} alt="p1_m3_1"/></div>
                 </div>
+                <div id = "m3description">
+                    <p>
+                        모든 현존은 불충분하다.<br/>
+                        채워지지 않는 잔여감에 외로이 먹먹히 떠나니지 않았으면,단순히 쾌락에 의지하지 말며 나 자신을 위로하며 함양하였으면,
+                    </p>
+                </div>
                 <div id = "main3Row2">
                     <div id = "row2_1c" className='main3row2'><img id = "p1_m3_2" className='main3row1img' src = {ungsungMain} alt="p1_m3_2"/></div>
                     <div id = "row2_2c" className='main3row2'><img id = "p1_m3_2_2" className='main3row1img' src = {p1_m3_3} alt="p1_m3_3"/></div>
@@ -105,6 +111,13 @@ const Main5 = () => {
                 <div id = "main5Row">
                     <div id = "m5_row_1c" className='main5row1'><img id = "p1_m5_1" className='main5row1img' src = {p1_m5_1} alt="p1_m5_1"/></div>
                     <div id = "m5_row_2c" className='main5row1'><img id = "p1_m5_2" className='main5row1img' src = {p1_m5_2} alt="p1_m5_2"/></div>
+                </div>
+                <div id = "m5description">
+                    <p>
+                        포장되어 허공에 떠나니는 나의 것들을<br/>
+                        대면하여 위로하고 사랑하여 주세요.<br/>
+                        당신은 충분히 당신답게 아름답습니다.
+                    </p>
                 </div>
             </div>
         </div>

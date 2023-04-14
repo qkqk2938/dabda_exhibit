@@ -11,6 +11,7 @@ const Main = () => {
     {
       id: 0,
       title: "",
+      Mtitle: "",
       description: (<Main0></Main0>),
     },
     {
@@ -19,26 +20,35 @@ const Main = () => {
           <img id = "menuLogo" src = {logo} alt="logo"/>
   
       ),
+      Mtitle: (
+        <div id  = "MlogoBox">
+          <img id = "menuLogo" src = {logo} alt="logo"/>
+        </div>
+      ),
       description: (<Main1></Main1>),
     },
     {
       id: 2,
       title: "답다 프로젝트01_엉성",
+      Mtitle: (<p>답<br/>다<br/><br/>프<br/>로<br/>젝<br/>트<br/>01<br/><br/>엉성</p>),
       description: (<Main2></Main2>),
     },
     {
       id: 3,
       title: "결핍",
+      Mtitle: (<p>결핍</p>),
       description: (<Main3></Main3>),
     },
     {
       id: 4,
       title: "은페",
+      Mtitle: (<p>은페</p>),
       description: (<Main4></Main4>),
     },
     {
       id: 5,
       title: "사랑",
+      Mtitle: (<p>사랑</p>),
       description: (<Main5></Main5>),
     }
   ];
@@ -71,8 +81,8 @@ const Main = () => {
                  {data.map(item => (
                    <li 
                    key={item.id}
-                   className= {(item.id===0?"":item.id===1?"MmainMenu MmenuList":"MmenuItem MmenuList")+(item.id===index?" selectMenu":"")}
-                   onClick={() => setIndex(item.id)}>{item.title}</li>
+                   className= {(item.id===0?"":"MmenuItem MmenuList")+(item.id===index?" selectMenu":"")}
+                   onClick={() => setIndex(item.id)}>{item.Mtitle}</li>
                  ))}
                </ul>
                 
