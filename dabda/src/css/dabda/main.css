@@ -33,6 +33,7 @@ ul{
     text-align:right;
     line-height:150px;
     padding-right:60px;
+    font-size: 30px;
 }
 .menuList{
     border-right:1px solid #BDBDBD;
@@ -47,5 +48,5 @@ ul{
 #menuLogo{
     margin-top:12%;
     margin-left:10%;
-    height:40%;
+    height:30%;
 }

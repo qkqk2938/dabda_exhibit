@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1fc434f2.css",
-    "main.js": "/static/js/main.9f5dd698.js",
+    "main.css": "/static/css/main.68c80bb2.css",
+    "main.js": "/static/js/main.e392c67f.js",
     "static/js/787.223550ad.chunk.js": "/static/js/787.223550ad.chunk.js",
+    "static/media/ungsungMain.jpg": "/static/media/ungsungMain.d053cad620d029744766.jpg",
     "index.html": "/index.html",
-    "main.1fc434f2.css.map": "/static/css/main.1fc434f2.css.map",
-    "main.9f5dd698.js.map": "/static/js/main.9f5dd698.js.map",
+    "main.68c80bb2.css.map": "/static/css/main.68c80bb2.css.map",
+    "main.e392c67f.js.map": "/static/js/main.e392c67f.js.map",
     "787.223550ad.chunk.js.map": "/static/js/787.223550ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fc434f2.css",
-    "static/js/main.9f5dd698.js"
+    "static/css/main.68c80bb2.css",
+    "static/js/main.e392c67f.js"
   ]
 }
