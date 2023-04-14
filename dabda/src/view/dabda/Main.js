@@ -58,12 +58,25 @@ const Main = () => {
                  ))}
                </ul>
                 {data.filter(item => index === item.id).map(item => (
-                 <div className = "tapBody">{item.description}</div>
+                 <div className = "tapMainBody">{item.description}</div>
                ))}
              </section>
         </BrowserView>
         <MobileView>
-      
+        <section className = "prame">
+               {data.filter(item => index === item.id).map(item => (
+                 <div className = "MtapMainBody">{item.description}</div>
+               ))}
+               <ul className = "MtapHeader">
+                 {data.map(item => (
+                   <li 
+                   key={item.id}
+                   className= {(item.id===0?"":item.id===1?"MmainMenu MmenuList":"MmenuItem MmenuList")+(item.id===index?" selectMenu":"")}
+                   onClick={() => setIndex(item.id)}>{item.title}</li>
+                 ))}
+               </ul>
+                
+             </section>
         </MobileView>
       </>
     );

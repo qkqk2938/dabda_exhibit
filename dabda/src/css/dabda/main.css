@@ -11,16 +11,17 @@ ul{
 }
 
 .tapHeader{
-    background-color : #EAEAEA;
+    background-color : #EDEDEB;
     width : 35%;
     height : 100%;
     float: left;
     margin: 0;
 }
-.tapBody {
-    width : 60%;
+.tapMainBody {
+    width : 65%;
     height : 100%;
     float: left;
+    margin: 0px auto;
 
 }
 
@@ -31,9 +32,9 @@ ul{
 .menuItem{
     height:17.5%;
     text-align:right;
-    line-height:150px;
-    padding-right:60px;
-    font-size: 30px;
+    line-height:550%;
+    padding-right:12%;
+    font-size: 170%;
 }
 .menuList{
     border-right:1px solid #BDBDBD;
@@ -49,4 +50,36 @@ ul{
     margin-top:12%;
     margin-left:10%;
     height:30%;
+}
+
+
+.MtapHeader{   
+    background-color : #EDEDEB;
+    width : 35%;
+    height : 100%;
+    margin: 0;
+    bottom: 0px;
+}
+.MtapMainBody {
+    width : 100%;
+    height : 60%;
+
+}
+
+.MmainMenu{
+    width:30%;
+}
+
+.MmenuItem{
+    width:17.5%;
+    text-align:right;
+    line-height:550%;
+    padding-right:12%;
+    font-size: 170%;
+}
+.MmenuList{
+    border-right:1px solid #BDBDBD;
+    border-bottom:1px solid #BDBDBD;
+    opacity:0.4;
+    float: left;
 }

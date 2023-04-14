@@ -11,7 +11,7 @@
 #mainImgBox{
     width: 70%;
     padding-right: 50px;
-    border-right: 3px solid gray;
+    border-right: 3px solid #B2B1AA;
     float: left;
 }
 
@@ -24,16 +24,18 @@
     top:0px;
     right:20px;
     font-size: 35px;
+    color: #B2B1AA;
    
 }
 #subTitle{
     position:absolute;
     bottom:0px;
     right:10px;
+    color: #B2B1AA;
 }
 
 #main1Body{
-   width: 70%;
+   width: 80%;
    margin: 0 auto;
 }
 #main1Row{
@@ -71,4 +73,106 @@
 #description{
     padding-top: 150px;
 
+}
+
+
+#main3Body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main3Row{
+    margin-top : 10%;
+    overflow: hidden;
+}
+
+.main3row1{
+    width: 40%;
+
+}
+#row_1c{   
+    float: left;    
+}
+#row_2c{   
+    float: right;    
+}
+
+.main3row1img{
+    width: 100%;
+}
+
+#main3Row2{
+    margin-top : 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+.main3row2{
+    width: 33%;
+}
+
+#row2_1c{   
+    float: left;    
+}
+#row2_2c{   
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    padding-left: 43%;
+}
+#row2_3c{   
+    float: left;  
+    position: absolute;
+    bottom: 0px;  
+    padding-left: 66%;
+}
+
+#p1_m3_2{   
+    width: 70%;   
+}
+#colBox{
+    margin: 0px auto;
+
+}
+#p1_m3_2_2{   
+    width: 50%;
+}
+#p1_m3_2_3{   
+    width: 45%;
+    float: right;
+    padding-right: 2%;
+}
+#p1_m3_2_4{   
+    top: 0px;   
+    float: right;  
+    width: 13%;
+}
+
+
+
+
+
+#main5Body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main5Row{
+    margin-top : 20%;
+    overflow: hidden;
+}
+
+.main5row1{
+    width: 48%;
+
+}
+#m5_row_1c{   
+    float: left;    
+}
+#m5_row_2c{   
+    float: right;    
+}
+
+.main5row1img{
+    width: 100%;
 }

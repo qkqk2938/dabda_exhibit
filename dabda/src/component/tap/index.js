@@ -1,6 +1,12 @@
 import './style.css';
 import logo_mun from '../../image/logo/logo_mun.png'
-import ungsungMain from '../../image/p1/ungsungMain.jpg'
+import ungsungMain from '../../image/p1/ungsungMain.jpeg'
+import p1_m3_1 from '../../image/p1/p1_m3_1.JPG'
+import p1_m3_3 from '../../image/p1/p1_m3_3.JPG'
+import p1_m3_4 from '../../image/p1/p1_m3_4.jpg'
+import p1_m3_5 from '../../image/p1/p1_m3_5.JPG'
+import p1_m5_1 from '../../image/p1/p1_m5_1.JPG'
+import p1_m5_2 from '../../image/p1/p1_m5_2.JPG'
 
 const Main0 = () => {
     return (
@@ -67,7 +73,19 @@ const Main2 = () => {
 const Main3 = () => {
     return (
         <div id = "tapBody">
-            3
+            
+            <div id = "main3Body">
+                <div id = "main3Row">
+                    <div id = "row_1c" className='main3row1'><img id = "p1_m3_1" className='main3row1img' src = {p1_m3_1} alt="p1_m3_1"/></div>
+                    <div id = "row_2c" className='main3row1'><img id = "p1_m3_1_2" className='main3row1img' src = {p1_m3_1} alt="p1_m3_1"/></div>
+                </div>
+                <div id = "main3Row2">
+                    <div id = "row2_1c" className='main3row2'><img id = "p1_m3_2" className='main3row1img' src = {ungsungMain} alt="p1_m3_2"/></div>
+                    <div id = "row2_2c" className='main3row2'><img id = "p1_m3_2_2" className='main3row1img' src = {p1_m3_3} alt="p1_m3_3"/></div>
+                    <div id = "row2_3c" className='main3row2'><img id = "p1_m3_2_4" className='main3row1img' src = {p1_m3_5} alt="p1_m3_5"/><img id = "p1_m3_2_3" className='main3row1img' src = {p1_m3_4} alt="p1_m3_4"/></div>
+    
+                </div>
+            </div>
         </div>
     );
 };
@@ -83,7 +101,12 @@ const Main4 = () => {
 const Main5 = () => {
     return (
         <div id = "tapBody">
-            5
+            <div id = "main5Body">
+                <div id = "main5Row">
+                    <div id = "m5_row_1c" className='main5row1'><img id = "p1_m5_1" className='main5row1img' src = {p1_m5_1} alt="p1_m5_1"/></div>
+                    <div id = "m5_row_2c" className='main5row1'><img id = "p1_m5_2" className='main5row1img' src = {p1_m5_2} alt="p1_m5_2"/></div>
+                </div>
+            </div>
         </div>
     );
 };
