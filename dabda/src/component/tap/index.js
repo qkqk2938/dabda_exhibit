@@ -1,18 +1,27 @@
 import './style.css';
 import logo_mun from '../../image/logo/logo_mun.png'
-import ungsungMain from '../../image/p1/ungsungMain.jpeg'
-import p1_m3_1 from '../../image/p1/p1_m3_1.JPG'
-import p1_m3_3 from '../../image/p1/p1_m3_3.JPG'
-import p1_m3_4 from '../../image/p1/p1_m3_4.jpg'
-import p1_m3_5 from '../../image/p1/p1_m3_5.JPG'
-import p1_m5_1 from '../../image/p1/p1_m5_1.JPG'
-import p1_m5_2 from '../../image/p1/p1_m5_2.JPG'
+// import ungsungMain from '../../image/p1/ungsungMain.jpeg'
+import m1 from '../../image/p1/m1.jpg'
+import m2 from '../../image/p1/m2.jpg'
+import m3 from '../../image/p1/m3.jpg'
+import m4 from '../../image/p1/m4.jpg'
+import m5 from '../../image/p1/m5.jpg'
+import Mm3 from '../../image/p1/Mm3.jpg'
+import Mm4 from '../../image/p1/Mm4.jpg'
+import Mm5 from '../../image/p1/Mm5.jpg'
+// import p1_m3_1 from '../../image/p1/p1_m3_1.JPG'
+// import p1_m3_3 from '../../image/p1/p1_m3_3.JPG'
+// import p1_m3_4 from '../../image/p1/p1_m3_4.jpg'
+// import p1_m3_5 from '../../image/p1/p1_m3_5.JPG'
+// import p1_m5_1 from '../../image/p1/p1_m5_1.JPG'
+// import p1_m5_2 from '../../image/p1/p1_m5_2.JPG'
 
-const Main0 = () => {
+const Main1 = () => {
     return (
         <div id = "tapBody">
-            <div id = "main0Body">
-                <div id = "main0Row">
+            <div id = "main1Body">
+             <img id = "m1" src = {m1} alt="m1"/>
+                {/* <div id = "main0Row">
                     <div id = "mainImgBox"><img id = "ungsungMain" src = {ungsungMain} alt="ungsungMain"/></div>
                     <div id = "mainTitle">
                         엉<br/>성
@@ -21,13 +30,13 @@ const Main0 = () => {
                      온라인<br/>전시회
 
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
 };
   
-const Main1 = () => {
+const Main0 = () => {
     return (
         <div id = "tapBody">
             <div id = "main1Body">
@@ -49,7 +58,9 @@ const Main2 = () => {
     return (
         <div id = "tapBody">
             <div id = "main2Body">
-                <div id = "projectNo">답다 프로젝트01</div>
+             <img id = "m2" src = {m2} alt="m2"/>
+
+                {/* <div id = "projectNo">답다 프로젝트01</div>
                 <div id = "projectTitle">엉 성</div>
                 <div id = "description">
                     <p>
@@ -64,7 +75,7 @@ const Main2 = () => {
                         은폐되어 허공을 맴돌고 있는 당신의 결핍들을<br/>
                         위로하고 안아주세요 당신답게 함양되길 바랍니다.<br/>
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     );
@@ -75,7 +86,8 @@ const Main3 = () => {
         <div id = "tapBody">
             
             <div id = "main3Body">
-                <div id = "main3Row">
+             <img id = "m3" src = {m3} alt="m3"/>
+                {/* <div id = "main3Row">
                     <div id = "row_1c" className='main3row1'><img id = "p1_m3_1" className='main3row1img' src = {p1_m3_1} alt="p1_m3_1"/></div>
                     <div id = "row_2c" className='main3row1'><img id = "p1_m3_1_2" className='main3row1img' src = {p1_m3_1} alt="p1_m3_1"/></div>
                 </div>
@@ -90,7 +102,7 @@ const Main3 = () => {
                     <div id = "row2_2c" className='main3row2'><img id = "p1_m3_2_2" className='main3row1img' src = {p1_m3_3} alt="p1_m3_3"/></div>
                     <div id = "row2_3c" className='main3row2'><img id = "p1_m3_2_4" className='main3row1img' src = {p1_m3_5} alt="p1_m3_5"/><img id = "p1_m3_2_3" className='main3row1img' src = {p1_m3_4} alt="p1_m3_4"/></div>
     
-                </div>
+                </div> */}
             </div>
         </div>
     );
@@ -99,7 +111,10 @@ const Main3 = () => {
 const Main4 = () => {
     return (
         <div id = "tapBody">
-            4
+        <div id = "main4Body">
+            
+            <img id = "m4" src = {m4} alt="m4"/>
+        </div>
         </div>
     );
 };
@@ -108,7 +123,9 @@ const Main5 = () => {
     return (
         <div id = "tapBody">
             <div id = "main5Body">
-                <div id = "main5Row">
+                
+             <img id = "m5" src = {m5} alt="m5"/>
+                {/* <div id = "main5Row">
                     <div id = "m5_row_1c" className='main5row1'><img id = "p1_m5_1" className='main5row1img' src = {p1_m5_1} alt="p1_m5_1"/></div>
                     <div id = "m5_row_2c" className='main5row1'><img id = "p1_m5_2" className='main5row1img' src = {p1_m5_2} alt="p1_m5_2"/></div>
                 </div>
@@ -118,10 +135,68 @@ const Main5 = () => {
                         대면하여 위로하고 사랑하여 주세요.<br/>
                         당신은 충분히 당신답게 아름답습니다.
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     );
 };
 
-export {Main0,Main1,Main2,Main3,Main4,Main5};
+const MMain1 = () => {
+    return (
+        <div id = "tapBody">
+            <div id = "Mmain1Body">
+             <img id = "Mm1" src = {m1} alt="m1"/>
+          
+            </div>
+        </div>
+    );
+};
+
+const MMain2 = () => {
+    return (
+        <div id = "tapBody">
+            <div id = "Mmain2Body">
+             <img id = "Mm2" src = {m2} alt="m2"/>
+
+              
+            </div>
+        </div>
+    );
+};
+const MMain3 = () => {
+    return (
+        <div id = "tapBody">
+            
+            <div id = "Mmain3Body">
+             <img id = "Mm3" src = {Mm3} alt="m3"/>
+         
+            </div>
+        </div>
+    );
+};
+
+const MMain4 = () => {
+    return (
+        <div id = "tapBody">
+        <div id = "Mmain4Body">
+            
+            <img id = "Mm4" src = {Mm4} alt="m4"/>
+        </div>
+        </div>
+    );
+};
+
+const MMain5 = () => {
+    return (
+        <div id = "tapBody">
+            <div id = "Mmain5Body">
+                
+             <img id = "Mm5" src = {Mm5} alt="m5"/>
+            
+            </div>
+        </div>
+    );
+};
+
+
+export {Main0,Main1,Main2,Main3,Main4,Main5,MMain1,MMain2,MMain3,MMain4,MMain5};

@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "chosunsm";
+    src: url("../../css/font/ChosunSm.TTF");
+}
+
+
+
 ul{
 
     list-style:none;
@@ -19,7 +26,7 @@ ul{
 }
 .tapMainBody {
     width : 65%;
-    height : 100%;
+    height : 100vh;
     float: left;
     margin: 0px auto;
 
@@ -30,16 +37,19 @@ ul{
 }
 
 .menuItem{
+    font-family: "chosunsm";
+    letter-spacing : 0.2em;
+    color: #B2B1AA;
     height:17.5%;
     text-align:right;
     line-height:550%;
-    padding-right:12%;
-    font-size: 170%;
+    padding-right:17%;
+    font-size: 25px;
 }
 .menuList{
-    border-right:1px solid #BDBDBD;
-    border-bottom:1px solid #BDBDBD;
-    opacity:0.4;
+    border-right:0.1px solid #BDBDBD;
+    border-bottom:0.1px solid #BDBDBD;
+    
 }
 .selectMenu{
     background-color : white;
@@ -47,9 +57,9 @@ ul{
 }
 
 #menuLogo{
-    margin-top:12%;
-    margin-left:10%;
-    height:30%;
+    margin-top:15%;
+    margin-left:25%;
+    height:27%;
 }
 
 
@@ -66,6 +76,12 @@ ul{
     height: 30%;
     padding-top: 10%;
 }
+
+#MmenuLogo{
+    margin :auto;
+    height:27%;
+}
+
 .MtapMainBody {
     width : 100%;
     height : 60%;
@@ -77,10 +93,11 @@ ul{
     text-align: center;
 }
 .MmenuList{
-    border-left:1px solid #BDBDBD;
-    border-top:1px solid #BDBDBD;
+    border-left:0.1px solid #BDBDBD;
+    border-top:0.1px solid #BDBDBD;
 	box-sizing: border-box;
-    opacity:0.4;
     float: left;
     height:100%;
+    color: #B2B1AA;
+    font-family: "chosunsm";
 }

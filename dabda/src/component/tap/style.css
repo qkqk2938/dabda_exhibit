@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "sfont";
+    src: url("../../css/font/SCDream4.otf");
+}
+
 #main0Body{
     width: 55%;
     margin: 0 auto;
@@ -35,6 +40,19 @@
     color: #B2B1AA;
 }
 
+
+#Mmain0Row{
+    overflow: hidden;
+    margin-top : 30%;
+    position:relative;
+}
+#MsubTitle{
+    position:absolute;
+    bottom:0px;
+    font-size: 2vh;
+    color: #B2B1AA;
+}
+
 #main1Body{
    width: 80%;
    margin: 0 auto;
@@ -61,33 +79,106 @@
 
 #main2Body{
     width: 70%;
+    height: 100vh;
     margin: 0 auto;
 }
 #projectNo{
+    font-size: 170%;
     padding-top: 25%;
 }
 
 #projectTitle{
-    font-size: 230%;
+    font-size: 300%;
     padding-top: 15px;
 }
 
 #description{
+    /* font-family: "sfont"; */
     padding-top: 20%;
-    font-size: 2vh;
+    font-size: 170%;
 
 }
-
-
-#main3Body{
-    width: 80%;
+#tapBody{
+    height: 100%;
+}
+#m1{
+    width: 100%;
+}
+#m2{
+    width: 100%;
+}
+#m3{
+    height: 100%;
+}
+#m4{
+    height: 100%;
+}
+#m5{
+    height: 100%;
+}
+#main1Body{
+    height: 100%;
     margin: 0 auto;
 }
+#main2Body{
+    height: 100%;
+    margin: 0 auto;
+}
+#main3Body{
+    height: 100%;
+    margin: 0 auto;
+}
+#main4Body{
+    height: 100%;
+    margin: 0 auto;
+}
+#main5Body{
+    height: 100%;
+    margin: 0 auto;
+}
+
 
 #main3Row{
     margin-top : 10%;
     overflow: hidden;
 }
+#Mm1{
+    width: 100%;
+}
+#Mm2{
+    width: 100%;
+}
+
+#Mm3{
+    width: 100%;
+}
+#Mm4{
+    width: 100%;
+}
+#Mm5{
+    width: 100%;
+}
+#Mmain1Body{
+    width: 100%;
+    margin: 0 auto;
+}
+#Mmain2Body{
+    width: 100%;
+    margin: 0 auto;
+}
+#Mmain3Body{
+    width: 95%;
+    margin: 0 auto;
+}
+#Mmain4Body{
+    width: 100%;
+    margin: 0 auto;
+}
+#Mmain5Body{
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 .main3row1{
     width: 40%;
@@ -160,10 +251,6 @@
 
 
 
-#main5Body{
-    width: 80%;
-    margin: 0 auto;
-}
 
 #main5Row{
     margin-top : 20%;
