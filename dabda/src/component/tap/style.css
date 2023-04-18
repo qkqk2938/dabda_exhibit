@@ -277,3 +277,18 @@
     color: #B2B1AA;
 
 }
+
+
+#goShop{
+    position: absolute;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    right: 2%;
+    top: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    font-size: 2vh;
+    font-weight: 550;
+    color: #292927;
+
+}

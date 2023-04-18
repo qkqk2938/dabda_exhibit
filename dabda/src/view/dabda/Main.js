@@ -28,13 +28,7 @@ const Main = () => {
       description: (<Main1></Main1>),
       Mdescription: (<MMain1></MMain1>),
     },
-    {
-      id: 2,
-      title: "답다 프로젝트01_엉성",
-      Mtitle: (<p>답다<br/><br/>프<br/>로<br/>젝<br/>트<br/>01<br/><br/>엉<br/>성</p>),
-      description: (<Main2></Main2>),
-      Mdescription: (<MMain2></MMain2>),
-    },
+    
     {
       id: 3,
       title: "결핍",
@@ -44,8 +38,8 @@ const Main = () => {
     },
     {
       id: 4,
-      title: "은페",
-      Mtitle: (<p>은페</p>),
+      title: "은폐",
+      Mtitle: (<p>은폐</p>),
       description: (<Main4></Main4>),
       Mdescription: (<MMain4></MMain4>),
     },
@@ -55,6 +49,13 @@ const Main = () => {
       Mtitle: (<p>사랑</p>),
       description: (<Main5></Main5>),
       Mdescription: (<MMain5></MMain5>),
+    },
+    {
+      id: 2,
+      title: "답다 프로젝트01_엉성",
+      Mtitle: (<p>답다<br/><br/>프<br/>로<br/>젝<br/>트<br/>01<br/><br/>엉<br/>성</p>),
+      description: (<Main2></Main2>),
+      Mdescription: (<MMain2></MMain2>),
     }
   ];
   const [index, setIndex] = useState(1);
