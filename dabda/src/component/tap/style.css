@@ -125,7 +125,7 @@
     margin: 0 auto;
 }
 #main3Body{
-    height: 100%;
+    height: 95%;
     margin: 0 auto;
 }
 #main4Body{
@@ -167,7 +167,8 @@
     margin: 0 auto;
 }
 #Mmain3Body{
-    width: 95%;
+    width: 90%;
+    padding-top: 10%;
     margin: 0 auto;
 }
 #Mmain4Body{
@@ -288,7 +289,7 @@
     padding-right: 1%;
     padding-left: 1%;
     font-size: 2vh;
-    font-weight: 550;
+    font-weight: 520;
     color: #292927;
 
 }
